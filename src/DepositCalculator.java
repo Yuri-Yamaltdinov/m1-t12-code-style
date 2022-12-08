@@ -13,11 +13,11 @@ public class DepositCalculator {
 
     double round(double value) {
         double scale = Math.pow(10, 2);
-        return Math.round((value * scale) / scale);
+        return Math.round((value * scale) / scale); //Мне кажется здесь лишние скобки поставил. В начальном коде другая формула.
     }
 
-    void calculateDeposit() {
-        double outAmount = 0;
+    void calculateDeposit() { //Название подходящее. У меня туго с названиями)
+        double outAmount = 0; //Code style Практикума предлагает ставить пустую строку для разделения кода на блоки команд и блоки объявления переменных.
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму вклада в рублях:");
         int inAmount = scanner.nextInt();
